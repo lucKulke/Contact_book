@@ -1,0 +1,12 @@
+
+
+<div class="jumbotron">
+  <h1 class="display-4"><%= @contact.first_name %> <%= @contact.last_name %></h1>
+  <p class="lead"> Phonenumber: <%= @contact.phone %> </p>
+  <hr class="my-4">
+  <p>Email: <%= @contact.email %> <br> Adress: <%= @contact.adress %></p>
+ <%= link_to 'Edit', edit_contact_path(@contact), class:"btn btn-dark" %> 
+<%= link_to 'Back', contacts_path, class:"btn btn-dark" %>
+</div>
+
+
